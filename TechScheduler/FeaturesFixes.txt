@@ -1,0 +1,8 @@
+﻿Setup:
+- Add all support tech names, and their hourly schedule
+- Edit hourly schedule for support staff as needed
+- Add the client's name
+
+Settings:
+- Show client's time zone (or disable in settings)
+- Exclude specified days

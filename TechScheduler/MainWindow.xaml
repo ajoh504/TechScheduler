@@ -1,0 +1,52 @@
+﻿<Window x:Class="TechScheduler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechScheduler"
+        mc:Ignorable="d"
+        Title="Tech Scheduler" Height="720" Width="900">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl Grid.ColumnSpan="5">
+
+            <TabItem Header="Scheduler">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel x:Name="MainPanel" HorizontalAlignment="Left" Margin="10,0,0,0" >
+                        <Label Content="Client:"/>
+                        <TextBlock x:Name="ClientTextBlock" Text="" HorizontalAlignment="Left" Width="112"/>
+
+                        <StackPanel x:Name="TaskLabelPanel">
+                            <Label Content="Tasks:"/>
+                            <Label Content="Day:" Margin="120,-26,0,0"/>
+                            <Label Content="Time:" Margin="240,-26,0,0"/>
+                            <Label Content="Time Zone:" Margin="360,-26,0,0"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="TaskSelectionPanel">
+                            <TextBlock x:Name="TaskTextBlock" Text="" Width="112" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Setup">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+
+            <TabItem Header="Settings">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>
