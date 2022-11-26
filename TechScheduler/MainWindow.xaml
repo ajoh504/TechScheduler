@@ -20,23 +20,40 @@
 
             <TabItem Header="Scheduler">
                 <Grid Background="#FFE5E5E5">
-                    
-                    <StackPanel x:Name="ClientPanel" Margin="10,0,0,0" HorizontalAlignment="Left">
+
+                    <StackPanel x:Name="ClientPanel" Margin="10,0,0,0" HorizontalAlignment="Left" Orientation="Vertical">
                         <Label Content="Client:"/>
-                        <TextBlock x:Name="ClientTextBlock" Width="112"/>
+                        <TextBlock x:Name="ClientTextBlock" Width="112" Text="This is the name of the client to schedule" Margin="5,0,0,0"/>
                     </StackPanel>
 
-                    <StackPanel x:Name="TaskLabelPanel" Margin="10,40,0,0"  HorizontalAlignment="Left" Orientation="Horizontal" >
-                        <Label Content="Tasks:"/>
-                        <Label Content="Day:" />
-                        <Label Content="Time:" />
-                        <Label Content="Time Zone:" />
+                    <StackPanel x:Name="TaskLabelPanel" HorizontalAlignment="Left" Orientation="Horizontal" >
+                        <Label Content="Tasks:" Margin="10,42,0,0"/>
+                        <Label Content="Day:" Margin="106,42,0,0"/>
+                        <Label Content="Time/Technician:" Margin="115,42,0,0"/>
+                        <Label Content="Time Zone(s):" Margin="49,42,0,0"/>
                     </StackPanel>
 
-                    <StackPanel x:Name="TaskSelectionPanel" Margin="10,80,0,0"  HorizontalAlignment="Left">
-                        <TextBlock x:Name="TaskTextBlock" Text="" Width="112" />
+                    <StackPanel x:Name="TaskSelectionPanel" Margin="-20,-520,0,0"  HorizontalAlignment="Left" Orientation="Horizontal">
+                        <StackPanel.Resources>
+                            <Style TargetType="{x:Type FrameworkElement}">
+                                <Setter Property="Margin" Value="35,0,0,0"/>
+                                <Setter Property="Width" Value="112"/>
+                                <Setter Property="Height" Value="20"/>
+                            </Style>
+                            <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
+                            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
+                        </StackPanel.Resources>
+                        <TextBlock x:Name="TaskTextBlock" Text="Task to schedule" Width="112" />
+                        <ComboBox x:Name="DayComboBox" />
+                        <ComboBox x:Name="TimeComboBox"/>
+                        <ComboBox x:Name="TimeZoneComboBox"/>
                     </StackPanel>
+                    
+                    
                 </Grid>
+                
+                
+
             </TabItem>
 
             <TabItem Header="Setup">
