@@ -20,20 +20,21 @@
 
             <TabItem Header="Scheduler">
                 <Grid Background="#FFE5E5E5">
-                    <StackPanel x:Name="MainPanel" HorizontalAlignment="Left" Margin="10,0,0,0" >
+                    
+                    <StackPanel x:Name="ClientPanel" Margin="10,0,0,0" HorizontalAlignment="Left">
                         <Label Content="Client:"/>
-                        <TextBlock x:Name="ClientTextBlock" Text="" HorizontalAlignment="Left" Width="112"/>
+                        <TextBlock x:Name="ClientTextBlock" Width="112"/>
+                    </StackPanel>
 
-                        <StackPanel x:Name="TaskLabelPanel">
-                            <Label Content="Tasks:"/>
-                            <Label Content="Day:" Margin="120,-26,0,0"/>
-                            <Label Content="Time:" Margin="240,-26,0,0"/>
-                            <Label Content="Time Zone:" Margin="360,-26,0,0"/>
-                        </StackPanel>
+                    <StackPanel x:Name="TaskLabelPanel" Margin="10,40,0,0"  HorizontalAlignment="Left" Orientation="Horizontal" >
+                        <Label Content="Tasks:"/>
+                        <Label Content="Day:" />
+                        <Label Content="Time:" />
+                        <Label Content="Time Zone:" />
+                    </StackPanel>
 
-                        <StackPanel x:Name="TaskSelectionPanel">
-                            <TextBlock x:Name="TaskTextBlock" Text="" Width="112" HorizontalAlignment="Left"/>
-                        </StackPanel>
+                    <StackPanel x:Name="TaskSelectionPanel" Margin="10,80,0,0"  HorizontalAlignment="Left">
+                        <TextBlock x:Name="TaskTextBlock" Text="" Width="112" />
                     </StackPanel>
                 </Grid>
             </TabItem>
