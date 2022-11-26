@@ -1,4 +1,7 @@
-﻿Setup:
+﻿Fixes:
+- enforce character limit for client name and name of task to schedule
+
+Setup:
 - Add all support tech names, and their hourly schedule
 - Edit hourly schedule for support staff as needed
 - Add the client's name
