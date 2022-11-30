@@ -32,6 +32,12 @@
                                 <Setter Property="Orientation" Value="Horizontal"/>
                                 <Setter Property="HorizontalAlignment" Value="Left"/>
                             </Style>
+                            <Style TargetType="{x:Type FrameworkElement}">
+                                <Setter Property="Width" Value="135"/>
+                                <Setter Property="Height" Value="18"/>
+                            </Style>
+                            <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
+                            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
                         </StackPanel.Resources>
 
                         <StackPanel x:Name="ClientPanel" Orientation="Vertical">
@@ -50,14 +56,6 @@
                         </StackPanel>
 
                         <StackPanel x:Name="TaskSelectionPanel" >
-                            <StackPanel.Resources>
-                                <Style TargetType="{x:Type FrameworkElement}">
-                                    <Setter Property="Width" Value="135"/>
-                                    <Setter Property="Height" Value="18"/>
-                                </Style>
-                                <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
-                                <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
-                            </StackPanel.Resources>
                             <Border>
                                 <TextBlock x:Name="TaskTextBlock" Text="Task to schedule" Margin="2,0,0,0"/>
                             </Border>
