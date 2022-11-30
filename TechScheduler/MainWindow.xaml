@@ -28,9 +28,13 @@
                                 <Setter Property="BorderThickness" Value=".3"/>
                                 <Setter Property="Margin" Value="5,0,0,0"/>
                             </Style>
+                            <Style TargetType="{x:Type StackPanel}">
+                                <Setter Property="Orientation" Value="Horizontal"/>
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                            </Style>
                         </StackPanel.Resources>
-                        
-                        <StackPanel x:Name="ClientPanel" HorizontalAlignment="Left" Orientation="Vertical">
+
+                        <StackPanel x:Name="ClientPanel" Orientation="Vertical">
                             <Label Content="Client:" FontWeight="Bold" />
                             <Border>
                                 <TextBlock x:Name="ClientTextBlock" Width="135" Height="18" Text="This is the name of the client to schedule" Margin="2,0,0,0" />
@@ -38,17 +42,16 @@
                             
                         </StackPanel>
 
-                        <StackPanel x:Name="TaskLabelPanel" HorizontalAlignment="Left" Orientation="Horizontal" >
-                            <Label Content="Tasks:" FontWeight="Bold" Margin="10,42,0,0" />
-                            <Label Content="Day:" FontWeight="Bold" Margin="106,42,0,0"/>
-                            <Label Content="Time/Technician:" FontWeight="Bold" Margin="115,42,0,0"/>
-                            <Label Content="Time Zone(s):" FontWeight="Bold" Margin="49,42,0,0"/>
+                        <StackPanel x:Name="TaskLabelPanel"  >
+                            <Label Content="Tasks:" FontWeight="Bold" />
+                            <Label Content="Day:" FontWeight="Bold" />
+                            <Label Content="Time/Technician:" FontWeight="Bold" />
+                            <Label Content="Time Zone(s):" FontWeight="Bold"/>
                         </StackPanel>
 
-                        <StackPanel x:Name="TaskSelectionPanel" HorizontalAlignment="Left" Orientation="Horizontal">
+                        <StackPanel x:Name="TaskSelectionPanel" >
                             <StackPanel.Resources>
                                 <Style TargetType="{x:Type FrameworkElement}">
-                                    <Setter Property="Margin" Value="30,0,0,0"/>
                                     <Setter Property="Width" Value="135"/>
                                     <Setter Property="Height" Value="18"/>
                                 </Style>
