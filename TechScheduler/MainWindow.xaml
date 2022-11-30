@@ -46,7 +46,7 @@
                         <TextBlock x:Name="TaskTextBlock" Text="Task to schedule" Width="112" />
                         <ComboBox x:Name="DayComboBox" />
                         <ComboBox x:Name="TimeComboBox"/>
-                        <ComboBox x:Name="TimeZoneComboBox"/>
+                        <TextBlock x:Name="TimeZoneComboBox" Text="PST: 10:00 AM CST: 12:00 PM"/>
                     </StackPanel>
                     
                     

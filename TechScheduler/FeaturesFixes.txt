@@ -9,3 +9,8 @@ Setup:
 Settings:
 - Show client's time zone (or disable in settings)
 - Exclude specified days
+
+Database:
+- Table: ClientName, Columns: TimeZone, ID Number, 
+- Table: Technician, Columns: Name, ShiftStartTime, ShiftEndTime, 
+- Table: ScheduledTask Columns: TaskName, TimeDuration
