@@ -44,6 +44,7 @@
                             </Style>
                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
                             <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
+                            <Style TargetType="{x:Type DatePicker}" BasedOn="{StaticResource {x:Type FrameworkElement}}" />
                         </StackPanel.Resources>
 
                         <StackPanel x:Name="ClientPanel" Orientation="Vertical">
@@ -64,7 +65,7 @@
                             <Border>
                                 <TextBlock x:Name="TaskTextBlock" Text="Task to schedule" />
                             </Border>
-                            <ComboBox x:Name="DayComboBox" />
+                            <DatePicker x:Name="TaskDatePicker" />
                             <ComboBox x:Name="TimeComboBox"/>
                             <Border>
                                 <TextBlock x:Name="TimeZoneComboBox" Text="PST: 10:00 AM CST: 12:00 PM" />
@@ -75,7 +76,7 @@
                             <Border>
                                 <TextBlock x:Name="TaskTextBlock1" Text="Task to schedule" />
                             </Border>
-                            <ComboBox x:Name="DayComboBox1" />
+                            <DatePicker x:Name="TaskDatePicker1" />
                             <ComboBox x:Name="TimeComboBox1"/>
                             <Border>
                                 <TextBlock x:Name="TimeZoneComboBox1" Text="PST: 10:00 AM CST: 12:00 PM" />
